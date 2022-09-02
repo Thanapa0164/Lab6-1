@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+function sumnum(){
+var box1 = document.getElementById("num1");
+var num1 = box1.value;
+var box2 = document.getElementById("num2");
+var num2 = box2.value;
+var box3 = document.getElementById("total");
+box3.value = parseInt(num1)+parseInt(num2);
+
+}
+</script>
+    
+</head>
+<body>
+    <form>
+        <input type="text" id="num1">
+        <label>+</label>
+        <input type="text" id="num2">
+        <label>=</label>
+        <input type="text" id="total">
+        <input type="button" id="sum" value="Go Go" onclick="sumnum()">
+    </form>
+</body>
+</html>
